@@ -1,28 +1,5 @@
-def nested_sum(array):
-    int_sum = 0
-    for i in array:
-        if type(i) == int:
-            int_sum += i
-        elif type(i) == list:
-            for j in i:
-                if type(j) == int:
-                    int_sum += j
-                elif type(j) == list:
-                    for k in j:
-                        if type(k) == int:
-                            int_sum += k
-                        elif type(k) == list:
-                            for l in k:
-                                if type(l) == int:
-                                    int_sum += l
-                                elif type(l) == list:
-                                    for m in l:
-                                        if type(m) == int:
-                                            int_sum += m
-            
-    print(int_sum)
 
-#nested_sum([5, [4, "3"], 4, [3, [2.5, [1, 1]]]])
+
 
 """6.4 Teilbarkeit von Teilersummen (20%)¶
 Die folgende Aufgabe wurde vorletztes Jahr bei der Klausur gestellt.
